@@ -1,0 +1,6 @@
+import { Mail, MapPin, Phone } from "lucide-react";
+import { ContactForm } from "./contact-form";
+export const metadata = { title: "Contact Us" };
+export default function ContactPage() {
+  return <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6"><p className="eyebrow">We are happy to help</p><h1 className="mt-3 font-display text-5xl text-luxury-ink">Get in touch.</h1><p className="mt-5 max-w-xl text-sm leading-7 text-luxury-muted">Questions about a product, delivery or your order? Reach out to Joey&apos;s Luxury.</p><div className="mt-10 grid gap-5 sm:grid-cols-3"><div className="border border-luxury-border p-6"><Phone className="text-luxury-goldHover" /><p className="mt-5 text-xs font-bold uppercase tracking-wider">Call us</p><p className="mt-2 text-sm">08034784901</p></div><div className="border border-luxury-border p-6"><Mail className="text-luxury-goldHover" /><p className="mt-5 text-xs font-bold uppercase tracking-wider">Email</p><p className="mt-2 break-all text-sm">josephelisha112233@gmail.com</p></div><div className="border border-luxury-border p-6"><MapPin className="text-luxury-goldHover" /><p className="mt-5 text-xs font-bold uppercase tracking-wider">Visit</p><p className="mt-2 text-sm">Jos, Plateau State, Nigeria</p></div></div><ContactForm /></div>;
+}

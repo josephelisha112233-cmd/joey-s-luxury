@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { background: #fff; color: #3B342A; }
+button, a { -webkit-tap-highlight-color: transparent; }
+::selection { background: #F1E5AC; color: #3B342A; }
+@layer components {
+  .icon-button { @apply inline-flex h-10 w-10 items-center justify-center rounded-full text-luxury-ink transition hover:bg-luxury-sand hover:text-luxury-goldHover; }
+  .eyebrow { @apply text-[10px] font-semibold uppercase tracking-[0.24em] text-luxury-goldHover; }
+  .section-title { @apply mt-3 font-display text-3xl leading-tight text-luxury-ink sm:text-4xl; }
+  .footer-heading { @apply text-[10px] font-semibold uppercase tracking-[0.2em] text-luxury-gold; }
+  .footer-links { @apply mt-5 flex flex-col items-start gap-3 text-sm text-white/65; }
+  .footer-links a { @apply transition hover:text-white; }
+  .gold-button { @apply inline-flex items-center justify-center bg-luxury-gold px-7 py-4 text-[10px] font-bold uppercase tracking-[0.17em] text-luxury-ink transition hover:bg-luxury-goldHover; }
+  .outline-button { @apply inline-flex items-center justify-center border border-luxury-ink px-7 py-4 text-[10px] font-bold uppercase tracking-[0.17em] text-luxury-ink transition hover:bg-luxury-ink hover:text-white; }
+  .field-label { @apply mb-2 block text-[10px] font-bold uppercase tracking-[0.13em] text-luxury-ink; }
+  .field-input { @apply block w-full border border-luxury-border bg-white px-4 py-3 text-sm outline-none transition focus:border-luxury-gold; }
+}
